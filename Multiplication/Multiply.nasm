@@ -1,5 +1,6 @@
 ; THIS PROGRAM ILLUSTRATES MULTIPLICATION
 
+; Compilation and execution: ./execute Multiply
 
 global _start
 
