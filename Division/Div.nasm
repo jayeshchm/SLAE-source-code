@@ -1,5 +1,4 @@
 ; THIS PROGRAM ILLUSTRATES DIVISION
-; Compilationa and execution: ./execute.sh Div
 
 global _start
 
@@ -15,22 +14,24 @@ section .text
 		div bl
 
 		; 16-bit division
-		
+	
 		mov dx , 0x0
-		mov ax , 0x1122
+		mov ax , 0xffff
 		div bx
 
 		mov dx , 0x0
-		mov ax , 0x1144 + 0x1
-		div bx
+		mov ebx, 0x010000
+		mov ax , 0xffff
+		div ebx
 	
 		; 32-bit division	
 	
 		mov edx , 0x0
-		mov eax , 0x11221122 + 0x1
-		div bl
+		mov eax , 0xffffffff
+		div ebx
 
 		; Exit call
 		mov eax , 0x1
 		mov ebx , 0x2
-		int 0x80
+		int 0x80	
+
