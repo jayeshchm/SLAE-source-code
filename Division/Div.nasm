@@ -1,4 +1,5 @@
 ; THIS PROGRAM ILLUSTRATES DIVISION
+; Compilationa and execution: ./execute.sh Div
 
 global _start
 
